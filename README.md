@@ -1,4 +1,4 @@
-#Genetic Direction GX Program Purchasing Process
+# Genetic Direction GX Program Purchasing Process
 
 Genetic Direction has a unique product that required customizing WooCommerce in order to satisfy their needs. The main hurdle was to provide dynamic product pricing depending on the number of products selected, and making sure the pricing changes are reflected throughout the buying process.
 
