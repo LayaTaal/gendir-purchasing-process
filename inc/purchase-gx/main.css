@@ -1,0 +1,213 @@
+header.gx-purchase-header {
+	padding-top: 1em;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+@media screen and (max-width: 1127px) {
+	header.gx-purchase-header h1 {
+		margin-bottom: 25px;
+	}
+}
+	/* Form styles */
+.gx-step {
+	margin: 25px 0;
+}
+.gx-bundle {
+	margin: 25px 0;
+	padding: 25px;
+	//border-left: 5px solid #00bed3;
+	box-shadow: 0px 0px 20px #5051511a;
+    background: #fff;
+}
+.gx-bundle--filled .gx-bundle__form {
+	display: none
+}
+.gx-bundle--filled.expanded .gx-bundle__form {
+	display: block;
+}
+.gx-bundle__header h3 {
+    font-size: 22px;
+    font-weight: 800;
+	margin-bottom: 12px;
+	display: inline-block;
+}
+.gx-bundle__header__delete {
+    display: inline-block;
+    float: right;
+}
+.gx-bundle__header__programs {
+	color: rgba(0,0,0.0.5);
+}
+.gx-bundle__form>div {
+    margin: 25px 0;
+}
+.gx-buttons {
+    margin: 0 !important;
+}
+.gx-bundle__form>div:first-of-type label {
+	display: block;
+    margin: 6px 0;
+}
+.gx-bundle__form p {
+	padding-bottom: 12px;
+}
+.gx-price-table {
+	margin-top: 2em;
+}
+.gx-price-table ul {
+    margin-left: 0;
+	padding-left: 0;
+}
+.gx-price-table ul li {
+    list-style: none;
+    padding-left: 0;
+}
+.gx-price-table ul li:first-child {
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	font-weight: 800;
+	margin-bottom: 12px;
+}
+.gx-price-table .li-right {
+	float: right;
+	padding-left: 4em;
+}
+.gx-add-to-cart-btn {
+	display: inline-block;
+	text-align: center;
+	background-color: #00bed3;
+	color: #fff;
+	padding: 12px 25px;
+	border-radius: 33px;
+	font-size: 18px;
+}
+
+/* LyfeCode styles which will be moved to Genetic Direction eventually */
+.gx-bundle__form__fieldset {
+	border: 1px solid #eee;
+	margin: 2em 0;
+	padding: 2em 2em;
+}
+.gx-bundle__form__fieldset legend {
+	padding: 0 1em;
+	margin-left: -1em;
+	font-size: 18px;
+}
+.btn-lyfecode {
+	background: #d32512;
+	color: #fff;
+	padding: 10px 30px;
+	border-radius: 2px;
+	transition: all 0.3s;
+}
+.btn-lyfecode:hover {
+	background: #941B0D;
+	color: #fff;
+}
+@media screen and (min-width: 1000px) {
+	.lyfecode-custom-column {
+		padding: 0 4rem;
+	}
+}
+
+/* Desktop styles */
+@media screen and (min-width: 768px) {
+	#gx-customer-details .fieldset-flex {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	#gx-customer-details label {
+		max-width: 250px;
+		margin-right: 25px;
+	}
+	#gx-customer-details label:last-of-type {
+		margin-right: 0;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	#gx-program-options .fieldset-flex {
+		display: flex;
+		justify-content: space-between;
+	}
+	.gx-price-table {
+		background: #eee;
+		padding: 2em;
+		margin-top: 0;
+	}
+	.gx-price-table ul {
+		margin-bottom: 0;
+	}
+	.gx-buttons {
+		text-align: right;
+		padding-right: 2em;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	#gx-customer-details label {
+		max-width: calc(33.33% - 17px);
+	}	
+}
+
+/* Cart page updates */
+.woocommerce-cart-form__cart-item .product-name {
+    font-size: 18px;
+}
+.woocommerce-cart-form__cart-item .variation * {
+	font-size: 14px;
+	font-weight: 400;
+}
+.woocommerce-cart-form__cart-item .variation {
+	display: flex;
+	flex-flow: row wrap;
+}
+.woocommerce-cart-form__cart-item .variation dt {
+    width: 25%;
+}
+.woocommerce-cart-form__cart-item .variation dd {
+    width: 60%;
+}
+.woocommerce table.cart td.product-quantity {
+	min-width: 165px !important;
+}
+
+/* Modifiers */
+a.modify-bundle {
+	cursor: pointer;
+}
+.gx-price.active {
+	font-weight: 800;
+	color: #0d9ddb;
+}
+a.add-bundle-btn {
+	cursor: pointer;
+}
+.gx-buttons .single_add_to_cart_button {
+	font-size: 18px;
+	padding: 8px 24px !important;
+}
+abbr.required {
+	color: #00bed3;
+	text-decoration: none;
+}
+html .woocommerce ul.products li.first.classic, 
+html .woocommerce-page ul.products li.first.classic {
+	clear: none !important;
+}
+.email-error p {
+	padding-top: 12px;
+	padding-bottom: 0;
+	color: red;
+}
+.form-error p {
+	color: red;
+}
+.field-error {
+	border: 2px solid red !important;
+}
+body[data-form-submit="regular"] button[type="submit"].btn--disabled {
+	background-color: rgb(238,238,238) !important;
+	cursor: text;
+}

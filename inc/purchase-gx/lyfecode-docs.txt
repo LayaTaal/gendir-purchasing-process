@@ -1,0 +1,77 @@
+Basic documentation for the LyfeCode project, which extends the functionality of the purchasing page
+for the affiliate company Lyfecode.
+
+Product IDs
+-----------
+Regular - 7633
+23andMe - 7635
+
+Files modified
+--------------
+functions.php *
+template-purchase-gx.php
+customer-processing-order.php
+main.js *
+main.css
+cart.php
+cart-functions.php
+header.php
+thankyou.php
+
+Details on file modifications
+-----------------------------
+
+---
+functions.php:
+---
+
+** Set production or staging environemtn $gd_env which runs the whole operation
+
+---
+template-purchase-gx.php:
+---
+
+This is the basic template for the purchasing page used for Gx programs. It has been updated to customize the user
+experience for LyfeCode visitors and to catch those product ids.
+
+---
+customer-processing-order.php
+---
+
+This is the email template sent when a user completes checkout. It displays some custom text for LyfeCode orders.
+
+---
+main.js
+---
+
+The main JavaScript code for the Genetic Direction purchasing page. Updated to catch LyfeCode specific actions.
+
+---
+main.css
+---
+
+Updated with styles for the LyfeCode page. These may be moved to production later.
+
+---
+cart.php
+---
+
+The cart page template. We are grabbing product ids for Gx orders to update the product link accordingly.
+
+---
+cart-functions.php
+---
+
+The main functions handling Gx order cart processes for WooCommerce.
+
+---
+header.php
+---
+
+Updated newsletter modal to not display on LyfeCode landing page.
+
+---
+thankyou.php
+---
+
+Added "Return to Lyfecode" button which triggers based on matching product id in order.
